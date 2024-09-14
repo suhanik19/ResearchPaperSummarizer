@@ -75,30 +75,5 @@ Sentiment Analysis Result:
 [{'label': 'POSITIVE', 'score': 0.99456787109375}]
 ```
 
-## Getting Started
-
-To run the Research Paper Analysis Tool:
-
-1. **Clone the Repository**
-
-```bash
-git clone https://github.com/yourusername/research-paper-analysis-tool.git
-cd research-paper-analysis-tool
-```
-
-2. **Install Dependencies**
-
-```bash
-pip install -U sentence-transformers keybert transformers
-```
-
-3. **Run the Tool**
-
-    Execute the main script and follow the prompts:
-
-```bash
-python main.py
-```
-
 ## Contact
 For any issues or further inquiries, please contact Suhani Khandelwal at suhanikhnadelwal05@gmail.com. If you encounter any bugs or have suggestions, feel free to open an issue on the GitHub repository.
