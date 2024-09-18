@@ -1,10 +1,10 @@
 # Research Paper Analysis Tool
 
-Welcome to the Research Paper Analysis Tool. This Python-based tool is designed to assist users in extracting valuable insights from research abstracts. It provides functionalities for summarizing texts, extracting key phrases, and performing sentiment analysis, streamlining the process of understanding and evaluating academic papers.
+Welcome to the Research Paper Analysis Tool. This Python-based tool is designed to help users extract valuable insights from research abstracts. It helps with summarizing texts, extracting key phrases, and performing sentiment analysis. I have created this tool to help college students such as myself understand and evaluate academic papers more efficiently to save time and enhance comprehension.
 
 ## Features
 
-The tool offers three primary capabilities:
+The tool offers three primary functionalities:
 
 1. **Extractive Summarization**: Generates a concise summary of an abstract by selecting the most relevant sentences based on cosine similarity. This enables quick comprehension of the key points in the abstract of a research paper.
 
@@ -18,29 +18,29 @@ The tool offers three primary capabilities:
 - **Hugging Face Transformers**: For sentiment analysis.
 
 ## Technologies
-- **Python**: Programming language used.
+- **Python**
 - **Sentence Transformers**: For generating sentence embeddings.
 - **KeyBERT**: For keyword extraction.
 - **Transformers**: For sentiment analysis.
 
 ## Installation
 
-To use the Research Paper Analysis Tool, you need to install the required Python packages. Execute the following commands in your terminal:
+To use the Research Paper Analysis Tool, click [here] (https://colab.research.google.com/drive/10MP7xPtLKRPN1ebOhNYCVVCG8gbNFc56) to open the project notebook in Google Colab.
 
-```bash
-pip install -U sentence-transformers keybert transformers
-```
+1. Run the Code: Once the notebook is open, you can run the code cells sequentially by clicking the "Run" button at the top of each cell or by selecting Runtime > Run All from the menu.
+   
+2. Environment Setup: The Colab notebook is pre-configured with the necessary libraries and dependencies. When prompted, Colab will install any additional libraries automatically.
+
+3. User Interaction: After running the code, the program will prompt you to select certain options and insert the abstract, following the directions accordingly.
 
 ## Usage
 
-After installation, you can interact with the tool via the command line. The tool provides an interactive prompt where you can select the desired analysis:
+The tool provides an interactive prompt where you can select the desired analysis:
 
-1. **Summarization**: Creates a summary of the abstract by selecting the most significant sentences.
-2. **Keywords**: Extracts and normalizes the 5 most important key phrases from the abstract.
+1. **Summarization**: Summarizes the abstract by picking out the most important sentences based on the number of sentences the user chooses.
+2. **Keywords**: Extract the 5 most important distinct key phrases from the abstract.
 3. **Sentiment Analysis**: Determines the sentiment of the abstract while providing the sentiment score to indicate the degree of positivity or negativity expressed in the text.
-4. **Combined Analysis**: Performs all three analyses sequentially.
-
-The tool is built using Python and relies on libraries like sentence-transformers, keybert, and transformers. The core functionalities are implemented in Python scripts, and users can interact with the tool via the command line.
+4. **Combined Analysis**: Performs all three of the above analyses sequentially.
 
 ## Example Usage
 
@@ -74,6 +74,14 @@ Unique Keywords:
 Sentiment Analysis Result:
 [{'label': 'POSITIVE', 'score': 0.99456787109375}]
 ```
+
+## Future Work
+While this program gets the job done, there are several areas for improvement to make this more robust and user-friendly:
+* Advanced Summarization Techniques:
+    * Allow users to customize their summaries (detailed vs. concise) and choose the simplicity (5th grade reading level vs. 12th grade reading level)
+* Similar Research Paper Generator:
+    * Gives users other research papers according to the title and abstract given by the user
+    * Integrate with academic databases such as Google Scholar or PubMed
 
 ## Contact
 For any issues or further inquiries, please contact Suhani Khandelwal at suhanikhnadelwal05@gmail.com. If you encounter any bugs or have suggestions, feel free to open an issue on the GitHub repository.
